@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.map-container {
+  position: relative;
+  height: 100vh;
+}
+
+/* Popup OpenLayers */
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 220px;
+}
+.ol-popup:after, .ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.ol-popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+.ol-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 6px;
+  right: 8px;
+}
+.ol-popup-closer:after {
+  content: "✕";
+}
+
+/* Buscador de direcciones (arriba a la derecha) */
+.search-control {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 360px;
+  max-width: 90vw;
+  z-index: 1000;
+}
+#search-results {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Cursor sobre puntos clicables */
+.ol-cursor-pointer {
+  cursor: pointer !important;
+}
