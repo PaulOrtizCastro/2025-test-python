@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Plaza Mayor de Lima",
+        "tipo": "Turismo",
+        "descripcion": "Centro histórico de Lima, patrimonio de la humanidad."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -77.02824, -12.04637 ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Machu Picchu",
+        "tipo": "Turismo",
+        "descripcion": "Ciudadela inca en Cusco, una de las 7 maravillas del mundo."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -72.5450, -13.1631 ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Plaza de Armas de Arequipa",
+        "tipo": "Turismo",
+        "descripcion": "Plaza principal de Arequipa, conocida por su arquitectura colonial."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -71.5350, -16.3989 ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Laguna 69",
+        "tipo": "Naturaleza",
+        "descripcion": "Laguna turquesa en la Cordillera Blanca, Áncash."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ -77.6126, -9.0039 ]
+      }
+    }
+  ]
+}
