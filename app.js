@@ -10,6 +10,21 @@ import { Circle as CircleStyle, Fill, Stroke, Style } from 'https://cdn.jsdelivr
 import { fromLonLat, transformExtent } from 'https://cdn.jsdelivr.net/npm/ol@6.15.1/proj.js';
 import { defaults as defaultControls } from 'https://cdn.jsdelivr.net/npm/ol@6.15.1/control.js';
 
+// EXPONE "ol" GLOBAL PARA COMPATIBILIDAD CON SCRIPTS ANTIGUOS
+if (!('ol' in window)) {
+	window.ol = {
+		Map,
+		View,
+		Overlay,
+		layer: { Tile: TileLayer, Vector: VectorLayer },
+		source: { OSM, Vector: VectorSource },
+		format: { GeoJSON },
+		style: { Style, Fill, Stroke, Circle: CircleStyle },
+		proj: { fromLonLat, transformExtent },
+		control: { defaults: defaultControls }
+	};
+}
+
 // Centro aproximado de Perú
 const peruCenterLonLat = [-75.015152, -9.189967];
 
